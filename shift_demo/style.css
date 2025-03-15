@@ -1,0 +1,62 @@
+/* styles.css */
+
+
+/* カレンダー全体の設定 */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Canvas要素の設定 */
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* レスポンシブデザイン */
+
+@media screen and (max-width: 600px) {
+    .calendar-container {
+        padding: 10px;
+    }
+    .download-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
